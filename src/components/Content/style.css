@@ -1,0 +1,16 @@
+.container {
+  display: block;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img_box {
+  width: 18%;
+  height: 250px;
+  margin: 15px;
+}
+.img_box img {
+  width: 100%;
+  height: 100%;
+}

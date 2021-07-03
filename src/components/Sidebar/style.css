@@ -1,0 +1,15 @@
+.sidebar {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+.sidebar_item {
+  width: 15%;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: chocolate;
+}
