@@ -1,9 +1,9 @@
 import './style.css'
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setCategory } from '../../redux/actions/actions';
 
-const Sidebar = ({change}) => {
+const Sidebar = () => {
 
     const [sidebarItems, setSidebarItems] = useState([]);
 
@@ -22,7 +22,7 @@ const Sidebar = ({change}) => {
     return(
         <div className='sidebar'>
             {sidebarItems.map((item, id) => {
-                return <div className='sidebar_item'
+                return <div className='sidebar_item' key={id}
                         onClick={() => dispatch(setCategory(id))}>
                         {item.name}
                     </div>

@@ -11,7 +11,7 @@ const store = createStore(combineReducers({
 }),{
     number: 10,
     categories: '',
-})
+},window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 
 
